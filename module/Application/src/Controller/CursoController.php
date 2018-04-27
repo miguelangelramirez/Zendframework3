@@ -4,9 +4,11 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class CursoController extends AbstractActionController {
+class CursoController extends AbstractActionController 
+{
     
-    public function listarAction(){
+    public function listarAction()
+    {
         $cursos = [
             "Symfony 3", 
             "Laravel 5", 
