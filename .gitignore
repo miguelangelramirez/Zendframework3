@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Composer files
 composer.phar
 vendor/
@@ -23,3 +24,11 @@ data/DoctrineORMModule/cache/
 # Legacy ZF1
 demos/
 extras/documentation
+=======
+.vagrant/
+vendor/
+config/development.config.php
+data/cache/*
+!data/cache/.gitkeep
+phpunit.xml
+>>>>>>> First commit into remote master, from local machine
