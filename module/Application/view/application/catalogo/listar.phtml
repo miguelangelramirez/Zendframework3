@@ -1,7 +1,13 @@
 <div class="row">
-    <h1><?php echo($this->lista2)?></h1>
+    <h1><?php echo $this->titulo ?></h1>
 
 
-
+    <table class="table table-striped">
+        
+                <?php foreach ($this->productos as $producto) : ?>
+                    <tr><td><?php echo $producto; ?></td></tr>
+                <?php endforeach; ?>
+        
+    </table>
     
 </div>

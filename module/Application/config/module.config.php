@@ -14,12 +14,26 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
+            
+            
+            
+            
             'catalogo'      => [
                 'type'      => Segment::class, 
                 'options'   =>  [
                     'route'     => '/catalogo[/:action]', 
                     'defaults'  => [
                         'controller'    => Controller\CatalogoController::class, 
+                        'action'        => 'listar',
+                    ]
+                ],
+            ],
+            'curso'      => [
+                'type'      => Segment::class, 
+                'options'   =>  [
+                    'route'     => '/curso[/:action]', 
+                    'defaults'  => [
+                        'controller'    => Controller\CursoController::class, 
                         'action'        => 'listar',
                     ]
                 ],

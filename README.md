@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # Zendframework3
 Just testing out Zend framework 3
-=======
 # ZendSkeletonApplication
 
 ## Introduction
@@ -225,4 +223,3 @@ $ composer cs-fix
 # Run PHPUnit tests:
 $ composer test
 ```
->>>>>>> First commit into remote master, from local machine
