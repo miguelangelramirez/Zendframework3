@@ -6,7 +6,6 @@ use Zend\View\Model\ViewModel;
 
 class CatalogoController extends AbstractActionController {
     
-    // New view 
     public function listarAction()
     {
         return new ViewModel(

@@ -14,12 +14,14 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
+            
+            
             'curso' => [
                 'type'    => Segment::class,
                 'options' => [
                     'route'    => '/curso[/:action]',
                     'defaults' => [
-                        'controller' => Controller\cursoController::class,
+                        'controller' => Controller\CursoController::class,
                         'action'     => 'listar',
                     ],
                 ],
