@@ -14,8 +14,16 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            
-            
+            'partes' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/partes[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\PartesController::class,
+                        'action'     => 'partes',
+                    ],
+                ],
+            ],
             'curso' => [
                 'type'    => Segment::class,
                 'options' => [
@@ -63,6 +71,7 @@ return [
             Controller\IndexController::class => InvokableFactory::class,
             Controller\CatalogoController::class => InvokableFactory::class,
             Controller\CursoController::class => InvokableFactory::class,
+            Controller\PartesController::class => InvokableFactory::class, 
         ],
     ],
     'view_manager' => [
