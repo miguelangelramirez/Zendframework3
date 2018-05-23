@@ -23,7 +23,7 @@ class CursoController extends AbstractActionController {
         // );
         // return $cursos; 
         
-        $todaysDate = date('m-d-Y');
+        // $todaysDate = date('m-d-Y');
 
         return new ViewModel([
             "cursos" => [
@@ -33,7 +33,7 @@ class CursoController extends AbstractActionController {
                 "Joomla", 
             ], 
             "titulo" => "Lista de Cursos",
-            "fecha" => $todaysDate, 
+            "fecha" => date('m-d-Y'), 
             
         ]); 
 

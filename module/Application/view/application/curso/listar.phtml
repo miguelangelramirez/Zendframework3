@@ -1,12 +1,27 @@
 <div class="row">
-
     <center>Today's date is: <strong><?php echo $this->fecha . "<br>" ?></strong></center>
-    
+    <p></p>
     <table class="table table-stripped">
         <tr><th><?php echo $this->titulo ?></th></tr>
         <?php foreach($this->cursos as $curso): ?>
             <tr><td><?php echo $curso; ?></td></tr>
         <?php endforeach; ?>
     </table>
+
+    <p>Un dropdown con los cursos</p>
+    <select name="cursos">
+        <?php foreach ($cursos as $curso) : ?>
+            <option value="<?php echo $curso ?>" id="<?php echo $curso ?>"><?php echo $curso?></option>
+        <?php endforeach; ?>
+    </select>
+</div>
+
+<div class="row">
+    <?php $count = count($this->cursos) ?>
+
+    <?php foreach($cursos as $curso) : ?>
+        <div class="col-md-<?php echo 12/$count ?>"><?php echo $curso ?></div>
+    <?php endforeach; ?>
+
     
 </div>
