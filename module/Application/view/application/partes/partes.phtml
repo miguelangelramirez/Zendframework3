@@ -1,3 +1,11 @@
-<div class="row">
-    <?php echo $this->baul ?>
+<div class="container">
+    <div class="row">
+
+    <label><?php echo "Partes de Motor" ?></label>
+    <?php foreach($this->motor as $motor_partes) : ?> 
+        <ul>
+            <li><?php echo $motor_partes ?></li>
+        </ul>
+    <?php endforeach; ?>
+    </div>
 </div>
